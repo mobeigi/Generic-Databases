@@ -1,0 +1,14 @@
+// Your implementation for the record class goes here.
+
+
+template <class value>
+ostream& operator<<(ostream& out, const Record<value>& r)
+{
+  return out;
+}
+
+template <class value>
+istream& operator>>(istream& in, Record<value>& r)
+{
+  return in; 
+}

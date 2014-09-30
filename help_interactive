@@ -1,0 +1,19 @@
+Welcome to the database program!
+
+This is a primitive database shell that allows the user to perform 
+operations like read, write, select, and delete on a database 
+interactively and immediately see the results. This means you can try 
+out lots of queries on your database  in a fairly easy fashion.  The 
+"language" for the shell is a pretty simplistic variant-- think of it as 
+mini-micro-SQL.  It has some built-in help, so you should be able to 
+learn from trying things and using the helpwhen you get lost.  The command 
+line reader tries to be robust in terms of ill-formed requests, but it may 
+not catch everything, so be tolerant.
+
+The first question it asks is what sort of database values you want to work
+with. The program can work with database of ints, Fractions, or MyStrings 
+(you can also extend the code to other types if you like).  There are sample 
+data files of each type for you to read in and play with.
+
+
+

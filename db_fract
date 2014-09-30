@@ -1,0 +1,16 @@
+{
+  Apple = 16+1/2
+  Heartport = 30+1/4
+  Netscape = 35+1/4
+  Microsoft = 55+1/2
+}
+{
+  Apple = 16+1/4
+  Netscape = 30+1/2
+  Heartport = 62/4
+}
+{
+  Apple = 15
+  Netscape = 36+1/2
+  Microsoft = 3/6
+}

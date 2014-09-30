@@ -1,0 +1,5 @@
+fraction.o: fraction.cpp fraction.h
+interactive.o: interactive.cpp fraction.h utility.h record.h record.tem \
+ database.h database.tem
+readrecord.o: readrecord.cpp fraction.h utility.h
+fraction.o: fraction.cpp fraction.h

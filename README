@@ -1,0 +1,46 @@
+Deliverable 3 - Generic Databases - README file
+
+VERSION- 1.0
+VERSION HISTORY-
+1. Version 1.0: initial release
+
+STUB DETAILS-
+
+* Files:
+
+Makefile
+README
+database.h           -- Database class header
+database.tem         -- Database class implementation
+db_big               -- sample data
+db_class             -- sample data
+db_fract             -- sample data
+db_int               -- sample data
+db_string            -- sample data
+del3_v10.pdf         -- specification
+fraction.cpp         -- Fraction class implementation
+fraction.h           -- Fraction class header           
+help_criteria        -- help text
+help_interactive     -- help text
+help_select          -- help text
+interactive.cpp      -- test harness
+record.h             -- Record class header
+record.tem           -- Record class implementation
+utility.h            -- helper functions
+
+* Your task:
+
+Implement the missing code to produce a working implementation of the
+Record and Database objects.
+
+You will be submitting four files: record.h record.tem database.h and database.tem . 
+None of these files should contain a `main' function!
+
+They will be compiled with a test file containing the `main' function and 
+the test code. The Makefile will be similar to that provided and the test
+harness similar to `interactive.cpp'.
+
+If a binary is successfully created then the binary will be run and you 
+will receive the marks if it produces the correct output.
+ 
+Good luck!

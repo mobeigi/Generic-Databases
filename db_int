@@ -1,0 +1,30 @@
+{
+  part number = 16485
+  number in stock = 14
+  supplier cost = 25
+  retail cost = 42
+}
+{
+  part number = 4557
+  number in stock = 0
+  supplier cost = 3
+  retail cost = 5
+}
+{
+  part number = 15372
+  number in stock = 25
+  supplier cost = 13
+  retail cost = 25
+}
+{
+  part number = 17463
+  number in stock = 10
+  supplier cost = 25
+  retail cost = 42
+}
+{
+  part number = 1098
+  number in stock = 0
+  supplier cost = 12
+  retail cost = 24
+}

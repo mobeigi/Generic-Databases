@@ -1,0 +1,16 @@
+These select commands requires a criteria argument. The criteria
+should be given in the form <fieldname> <op> <value>. <fieldname> can be 
+any string (including spaces). This fieldname will be compared with all 
+pairs in a record to find any fields of that name. You can use * to indicate 
+a match to any fieldname. <op> can be any of these 5 symbols: =, !=, <, >, ^.
+<value> is the value to match or compare to. The correct format for the value
+depends on the type of values in the database.  For MyString values, any
+string (including spaces) is accepted.
+Some examples:
+-- "select add name = Bill Clinton" would add any record having a name field 
+with value Bill Clinton to the current selection
+-- "select remove state < FL" would remove records in the current selection 
+with a state field that has a value less-than (alphabetically) than FL.
+-- "select refine * = 10"  would refine the selection to only include those 
+records that have a value of 10 (for any field).
+

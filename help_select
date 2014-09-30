@@ -1,0 +1,12 @@
+The select command requires arguments. The first argument
+identifies how you want to change the selection. Valid options 
+are: all, clear, add, remove, and refine.
+"select all" will select all records in the database.
+"select clear" will deselect all records in the database.
+The remaining three options modify the selection by identifying records
+not currently in the selection to add ("select add"), records currently
+in the section to remove ("select remove"), or records within the selection
+to keep ("select refine"). These commands require an additional argument 
+which is the criteria to identify the records to change. Try "select add" 
+with no arguments to get help on specifying the criteria.
+

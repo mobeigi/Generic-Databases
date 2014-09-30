@@ -1,0 +1,889 @@
+{
+    name = Hao Xu
+    leland id = haoxu
+    e-mail = haoxu@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Weizhen Lin
+    leland id = wzlin
+    e-mail = wzlin@leland
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = C.sivanandan
+    leland id = siva1
+    e-mail = csiva@informix.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Michael Chen
+    leland id = mcnugget
+    e-mail = mcnugget@it.usyd.edu.au
+    grader = Raya
+    type of student = Univ of Sydney
+}
+{
+    name = Chris Bucchere
+    leland id = bucchere
+    e-mail = bucchere@it.usyd.edu.au
+    grader = Raya
+    type of student = Univ of Sydney
+}
+{
+    name = Gennady Imeshev
+    leland id = gena
+    e-mail = gena@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Vikas Kshetrapal
+    leland id = vikas1
+    e-mail = vikas@quickturn.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Crosby Grant
+    leland id = crozzer
+    e-mail = crozzer@optusnet.com.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Ramon Zazueta-Ontiveros
+    leland id = ramonz
+    e-mail = ramonz@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Richard Salvador
+    leland id = rhs
+    e-mail = rhs@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Douglas Anderson
+    leland id = dianders
+    e-mail = dianders@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Bart L. Fisher
+    leland id = bfisher1
+    e-mail = bart.fisher@eng.sun.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Chungman Ho
+    leland id = dho
+    e-mail = dho@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Kelly Hirano
+    leland id = tbird
+    e-mail = hirano@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Pengbo Lu
+    leland id = pblu
+    e-mail = lu@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = SumYim Samatha Kung
+    leland id = skung
+    e-mail = skung@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Cheng-ping Dardy Chang
+    leland id = darkwing
+    e-mail = darkwing@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Scott S. Young
+    leland id = scotty18
+    e-mail = scotty@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Victor Wu
+    leland id = victorw1
+    e-mail = victorw@sr.hp.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Paritosh Desai
+    leland id = paritosh
+    e-mail = paritosh@leland
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Yuguang Liu
+    leland id = lyg
+    e-mail = yliu@gas
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Anand Rangarajan
+    leland id = anandr
+    e-mail = anandr@unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Samir Rajguru
+    leland id = srajguru
+    e-mail = srajguru@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Yue (Connie) Chan
+    leland id = yuechan1
+    e-mail = cchan1@mipos2.intel.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Mark Moss
+    leland id = bomi
+    e-mail = moss@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Joshua Elman
+    leland id = jelman
+    e-mail = jelman@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Michael Gaisford
+    leland id = pluto
+    e-mail = pluto@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Wilson Kok
+    leland id = wkok
+    e-mail = wkok@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = David Medeiros
+    leland id = davidm1
+    e-mail = david.medeiros@east.sun.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Huaqing Zheng
+    leland id = morpheus
+    e-mail = morpheus@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Raya Fratkina
+    leland id = rayaf
+    e-mail = raya@cse.unsw.edu.au.au
+    grader = Raya
+    type of student = UNSW
+}
+{
+    name = Jing Wan
+    leland id = wanj
+    e-mail = jingw@cse.unsw.edu.au.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Michael Metts
+    leland id = metts0
+    e-mail = mmetts@vnet.ibm.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Timothy Weaver
+    leland id = tweaver
+    e-mail = tweaver@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Kin-Kee Sit
+    leland id = sit
+    e-mail = sit@unsw.edu.au.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Douglas Kunz
+    leland id = dakunz
+    e-mail = dakunz@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Menoo Cung
+    leland id = menoo1
+    e-mail = hcung@us.oracle.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = David Satterfield
+    leland id = davids1
+    e-mail = david.satterfield@east.sun.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Nateecha Taychakhoonavudh
+    leland id = tutti
+    e-mail = tutti@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Yen-Hsia Chang
+    leland id = yenhsia
+    e-mail = yenhsia@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Wendy Zhou
+    leland id = wzhou1
+    e-mail = wendy@quickturn.com
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Nabeel Ibrahim
+    leland id = ibrahim
+    e-mail = ibrahim@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Jim Geist
+    leland id = jimge
+    e-mail = jimge@cs.unsw.edu.au
+    grader = simpson
+    type of student = UNSW
+}
+{
+    name = Tongwei Liu
+    leland id = liutw
+    e-mail = tongwei@playfair.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Clover Huang
+    leland id = clo
+    e-mail = clo@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Lucy Phan
+    leland id = lphan1
+    e-mail = lphan@us.oracle.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Helios Tsoi
+    leland id = helios
+    e-mail = helios@leland.unsw.edu.au
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Maciek Kozyrczak
+    leland id = maciekk
+    e-mail = maciekk@ogun.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Bing Han
+    leland id = binghan
+    e-mail = binghan@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Yau-Cheung Chu
+    leland id = ycchu
+    e-mail = ycchu@leland.unsw.edu.au
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = YU-HSIN CHEN
+    leland id = yuhsin
+    e-mail = yuhsin@cs.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = naveen k nimmu
+    leland id = nimmu71
+    e-mail = naveen@cisco.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Narasimhaprasad Kodur
+    leland id = prasad
+    e-mail = prasad@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Jennette Hardy
+    leland id = jennette
+    e-mail = jennette@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Rukmal Sirisena
+    leland id = cable
+    e-mail = rukmal@cs
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = David Spott
+    leland id = spott
+    e-mail = david.spott@eng.sun.com
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Esther Park
+    leland id = espark
+    e-mail = espark@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Hui Cao
+    leland id = hcao
+    e-mail = hcao@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Alec Rooney
+    leland id = rooneya
+    e-mail = rooney@monty.ultranet.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = anand arunachalam
+    leland id = ananda1
+    e-mail = ananda1@leland.unsw.edu.au
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Ling-Kun Lyncoln Cheng
+    leland id = lyncoln
+    e-mail = lyncoln@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Jui Wang
+    leland id = juiwang
+    e-mail = juiwang@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Terence Chin
+    leland id = tchin25
+    e-mail = tchin@dtc.hp.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Ray Gasser
+    leland id = rgasser
+    e-mail = rgasser@cup.hp.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Anya Tsalenko
+    leland id = tsalenko
+    e-mail = tsalenko@math.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Gleb Arshinov
+    leland id = glebster
+    e-mail = gleb@cs.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Cezar Sfrijan
+    leland id = cezar89
+    e-mail = sfrijan@cris.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Hussein Kanji
+    leland id = extant
+    e-mail = hkanji@unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Mathieu Farrugia
+    leland id = schisms
+    e-mail = mathieu@cs.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Per H. Christensen
+    leland id = perc1
+    e-mail = pchrist@boi.hp.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Athina Markopoulou
+    leland id = amarko
+    e-mail = amarko@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = David Miles
+    leland id = sunspark
+    e-mail = sunspark@sun-valley.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Stan Jirman
+    leland id = stanj
+    e-mail = stanj@cs
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Brent Johnston
+    leland id = bjohn
+    e-mail = bjohn@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Dick Hwang
+    leland id = platyase
+    e-mail = platyase@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Janice Bisson
+    leland id = bissonj
+    e-mail = bissonj@an.hp.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Joanna L. Salgado
+    leland id = calliope
+    e-mail = calliope@rescomp
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Kirti Kwatra
+    leland id = kkwatra
+    e-mail = kwatra@cs.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Kevin Lee
+    leland id = kevinlee
+    e-mail = kevinlee@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Christian Cojocneanu
+    leland id = chris17
+    e-mail = cc@bcmicro.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Richard Liu
+    leland id = ryliu
+    e-mail = ryliu@us.oracle.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Virginia C. Garcia
+    leland id = celest
+    e-mail = celest@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Rukaiya Sogiawala
+    leland id = ruks
+    e-mail = rbohras@cs
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Youngmoo Kim
+    leland id = ykim
+    e-mail = ykim@leland.unsw.edu.au
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = Patrick Donohue
+    leland id = sonic
+    e-mail = patrick@lesalon.apple.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Kern (Ken) Rim
+    leland id = kernrim
+    e-mail = kernrim@cvd.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = kanzhe Jiang
+    leland id = kanzhe
+    e-mail = kanzhe@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Eylon Stroh
+    leland id = maestroh
+    e-mail = maestroh@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Thennavan Subbiah
+    leland id = subbiah1
+    e-mail = subbiah@synopsys.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = George D. Rom
+    leland id = grom
+    e-mail = rom@an.hp.com
+    grader = Helios
+    type of student = SITN Remote
+}
+{
+    name = ASHISH MUNJAL
+    leland id = amunjal1
+    e-mail = ashish.munjal@eng.sun.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Bradley Kohn
+    leland id = kohnan
+    e-mail = kohnan@leland
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Rong Yue
+    leland id = ryue1
+    e-mail = rong@corp.cirrus.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Charitha Jayasuriya
+    leland id = charith8
+    e-mail = charitha@eng.sun.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Yu-May Chang
+    leland id = ymc
+    e-mail = ymc@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Yang Cao
+    leland id = yangcao
+    e-mail = yangcao@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = EDWIN SU
+    leland id = edwinsu
+    e-mail = edwin.su@eng.sun.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Rohan Aranha
+    leland id = aranha
+    e-mail = aranha@cs
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Tom Popovich
+    leland id = tpop7
+    e-mail = tpop@informix.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Kip Gwin
+    leland id = ktgwin
+    e-mail = kgwin@aol.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Craig Meyer
+    leland id = cmeyer
+    e-mail = cmeyer@lad.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Ivan Perez-Armendariz
+    leland id = perez
+    e-mail = perez@leland.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Yi-Chin Chu
+    leland id = yichin
+    e-mail = yichin@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Firdaus Abdullah
+    leland id = firdaus
+    e-mail = firdaus@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Dana Underwood
+    leland id = danau
+    e-mail = danau@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Andrew R. Rezvani
+    leland id = arezvani
+    e-mail = arezvani@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Weerachai Anotaipaiboon
+    leland id = jackk
+    e-mail = jackk@UNSW.EDU
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Andrew Shieh
+    leland id = shandrew
+    e-mail = doh@cyclone.unsw.edu.au
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Kristen Pol
+    leland id = pol
+    e-mail = kristen_pol@hp.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Stephen Sorkin
+    leland id = ssorkin
+    e-mail = ssorkin@leland
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Kedar Doshi
+    leland id = kedar
+    e-mail = kedar@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Edward Hou
+    leland id = edhou
+    e-mail = edhou@leland
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Yung-Wen Wu
+    leland id = yungwen
+    e-mail = yungwen@leland
+    grader = Helios
+    type of student = UNSW
+}
+{
+    name = Michelle Hoerner
+    leland id = mhoerner
+    e-mail = mhoerner@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Russ Allbery
+    leland id = rra
+    e-mail = rra@cs.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Seth Katz
+    leland id = sethkatz
+    e-mail = sethkatz@cs.unsw.edu.au
+    grader = Seth
+    type of student = UNSW
+}
+{
+    name = Elena Huang
+    leland id = ehuang1
+    e-mail = ehuang@us.oracle.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Lyndon Allydice
+    leland id = lyndon
+    e-mail = lyndon@cs.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Chris Peiffer
+    leland id = peifferc
+    e-mail = peifferc@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Scott Crosby
+    leland id = scrosby1
+    e-mail = scott.crosby@eng.efi.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Michael Ross
+    leland id = heaven
+    e-mail = heaven@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Brian Hicks
+    leland id = bhicks
+    e-mail = hicks@pangea.UNSW.EDU
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Mike McNelly
+    leland id = mmcnelly
+    e-mail = mmcnelly@leland.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Heidi Schubert
+    leland id = heidi
+    e-mail = heidi@sun-valley
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = Daniel P. Maher
+    leland id = dmaher1
+    e-mail = dmaher@digidesign.com
+    grader = Helios
+    type of student = SITN Local
+}
+{
+    name = Ted Manning
+    leland id = tmanning
+    e-mail = tmanning@leland
+    grader = Rukaiya
+    type of student = UNSW
+}
+{
+    name = saleh al-dossary
+    leland id = saleh
+    e-mail = saleh@pangea.unsw.edu.au
+    grader = Rukaiya
+    type of student = UNSW
+}
