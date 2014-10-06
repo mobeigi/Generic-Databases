@@ -9,9 +9,12 @@ ostream& operator<<(ostream& out, const Record<value>& r)
 {
   out << "{" << endl;
 
-  //Iterate over fields
-  for (auto it = r.fields.begin(); it != r.fields.end(); ++it) {
-    out << "  " << it->first << " = " << it->second << endl;  // (2 spaces) <attribute> = <value>
+  //Iterate over fields using insertionOrder to determine order
+  for (auto iot = r.insertionOrder.begin(); iot != r.insertionOrder.end(); ++iot) {
+    //For each attribute, check all the values in the vector that belong to it (there may be more than 1)
+    for (auto vit = r.fields.at(*iot).begin(); vit != r.fields.at(*iot).end(); ++vit) {
+      out << "  " << *iot << " = " << *vit << endl;  // (2 spaces) <attribute> = <value>
+    }
   }
 
   out << "}";
@@ -21,10 +24,14 @@ ostream& operator<<(ostream& out, const Record<value>& r)
 
 /* >> overload
  * 
+ * Complexity: O(n) to search through every entry in insertion order
 */
 template <class value>
 istream& operator>>(istream& in, Record<value>& r)
 {
+  //Clear contents of record before reading in new data (ie we overwrite any pre-existing data)
+  r.fields.clear();
+
   string input;
   
   //Get first line manually
@@ -64,11 +71,12 @@ istream& operator>>(istream& in, Record<value>& r)
     //Use helper function to read in values with some specialization
     readValue<value>(valStream, val);
 
-    //Make new pair
-    pair<string, value> p = pair<string, value>(attribute, val);
-
-    //Add pair to end of fields
-    r.fields.push_back(p);
+    //Note insertion order of this element, add it to our list if this is a new attribute
+    if (r.fields[attribute].empty())
+      r.insertionOrder.push_back(attribute);
+    
+    //Add our value to our vector
+    r.fields[attribute].push_back(val);
 
   }
 
@@ -76,13 +84,68 @@ istream& operator>>(istream& in, Record<value>& r)
 }
 
 
+/*
+ * Query Matching function for records
+ * 
+ * Complexity: O(n) if searching all fields, ie attr = "*", O(k) otherwise where k is the number of fields with attribute 'attr'
+ * Return: true if there exists value which under operation 'op' is equivalent to want
+*/
 template <class value>
 bool Record<value>::matchesQuery(const string& attr, DBQueryOperator op, const value& want) const {
- 
+  bool fullSearch = false;
+  string attribute = attr;
+
+  //Check to see if we need to search entire list
+  if (attribute == "*")
+    fullSearch = true;
+  //otherwise ensure this attribute exists, if not result is always false
+  else if (!this->fields.count(attribute)) {
+    return false;
+  }
+
+  //Iterate over fields using insertionOrder to determine order
+  for (auto iot = this->insertionOrder.begin(); iot != this->insertionOrder.end(); ++iot) {
+
+    //If fullsearch, set attribute to ordered list attribute value
+    if (fullSearch)
+      attribute = *iot;
+
+    //For each attribute, check all the values in the vector that belong to it (there may be more than 1)
+    for (auto vit = this->fields.at(attribute).begin(); vit != this->fields.at(attribute).end(); ++vit) {
+      
+      //Perform comparison based on provided operator
+      switch (op) {
+        case Equal:
+          if (*vit == want)
+            return true;
+          break;
+        case NotEqual:
+          if (*vit != want)
+            return true;
+          break;
+        case LessThan:
+          if (*vit < want)
+            return true;
+          break;
+        case GreaterThan:
+          if (*vit > want)
+            return true;
+          break;
+      }
+    }
+
+    //If not a fullsearch, leave after first loop
+    if (!fullSearch)
+      break;
+
+  }
+  
+  //If search finished without returning true, condition was not met
+  return false;
 }
 
 
-//Helper template functions
+//Private Helper functions
 
 //Read in value using defined >> on value
 template <class value>
@@ -92,7 +155,7 @@ void readValue(istream& is, value& val) {
 
 //Read in string so that entire string is stored and not just upto first whitespace
 template <>
-void readValue<string>(istream& is, string& val) {
+void readValue(istream& is, string& val) {
   string input;
 
   while (getline(is, val)) {

@@ -2,12 +2,11 @@
 #include "record.h"
 #include <fstream>
 
-
 using namespace std;
 
 int main() {
 
-  Record<string> rec;
+  Record<int> rec;
 
   //Open test file
   ifstream ifs("O:/Dropbox/Github/Generic-Databases/record.txt");
@@ -21,8 +20,7 @@ int main() {
   else cout << "Unable to open file";
   
   //Explore
-  cout << rec;
-
+  //cout << rec;
 
   //stuff
   cin.ignore();

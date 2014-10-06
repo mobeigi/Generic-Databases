@@ -1,0 +1,1 @@
+- Print "NO Selected Records" (from email) if print command issued with no records selected

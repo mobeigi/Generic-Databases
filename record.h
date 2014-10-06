@@ -4,6 +4,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
+#include <unordered_map>
+#include <list>
+
 using namespace std;
 
 #include "utility.h"
@@ -30,7 +34,7 @@ template <class value>
 class Record {
 
 public:
-  Record<value>() : selected(false), fields(vector<pair<string, value>>()) {};
+  Record<value>() : selected(false), fields(unordered_map<string, vector<value>>()), insertionOrder(list<string>()) {};
 
   //Member functions
   inline bool isSelected() const { return selected; };
@@ -47,8 +51,19 @@ public:
   ~Record() {};
 
 //private:
-  bool selected;
-  vector<pair<string, value>> fields;
+  bool selected;  //used to select/unselect record
+
+  //Record data will be stored in an unordered_map which maps strings to a vector of values
+  //This has many advantages over a vector of pairs at the cost of a little extra memory (as insertion order has to be kept in a unordered_set)
+  unordered_map<string, vector<value>> fields;
+  list<string> insertionOrder;
+  //vector<pair<string, value>> fields;
+
+
+  //Private helper functions
+  template <class value> void readValue(istream& is, value& val);
+  template <> void readValue(istream& is, string& val);
+
 };
 
 #include "record.cpp"

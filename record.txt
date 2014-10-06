@@ -1,8 +1,6 @@
 {
-  name = Jingling Xue
-  e-mail = jxue@cse.unsw.edu.au
-  home page = http://www.cse.unsw.edu.au/~jingling
-  occupation = Lecturer in Computer Science
-  favorite sport = question answering
-  office hours = Tues 7-12pm
+  part number = 16485
+  number in stock = 14
+  supplier cost = 25
+  retail cost = 42
 }
