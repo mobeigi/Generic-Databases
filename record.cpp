@@ -1,8 +1,11 @@
 // Your implementation for the record class goes here.
 #include <sstream>
 
-/* << operator overload
+/*
+ * << operator overload
  * Format of output is opening {, following lines of entries of type: <attribute> = <value> and final closing }
+ *
+ * Complexity: O(n) to iterate over each field in insertion order
 */
 template <class value>
 ostream& operator<<(ostream& out, const Record<value>& r)
@@ -10,11 +13,9 @@ ostream& operator<<(ostream& out, const Record<value>& r)
   out << "{" << endl;
 
   //Iterate over fields using insertionOrder to determine order
+  //We will use the fact that insertionorder provides us with the index of the element in the vector
   for (auto iot = r.insertionOrder.begin(); iot != r.insertionOrder.end(); ++iot) {
-    //For each attribute, check all the values in the vector that belong to it (there may be more than 1)
-    for (auto vit = r.fields.at(*iot).begin(); vit != r.fields.at(*iot).end(); ++vit) {
-      out << "  " << *iot << " = " << *vit << endl;  // (2 spaces) <attribute> = <value>
-    }
+    out << "  " << iot->first << " = " << r.fields.at(iot->first).at(iot->second) << endl;  // (2 spaces) <attribute> = <value>
   }
 
   out << "}";
@@ -24,7 +25,7 @@ ostream& operator<<(ostream& out, const Record<value>& r)
 
 /* >> overload
  * 
- * Complexity: O(n) to search through every entry in insertion order
+ * Allows reading into records from streams.
 */
 template <class value>
 istream& operator>>(istream& in, Record<value>& r)
@@ -71,10 +72,12 @@ istream& operator>>(istream& in, Record<value>& r)
     //Use helper function to read in values with some specialization
     readValue<value>(valStream, val);
 
-    //Note insertion order of this element, add it to our list if this is a new attribute
+    //Note insertion order of this field for ordered printing later on
     if (r.fields[attribute].empty())
-      r.insertionOrder.push_back(attribute);
-    
+      r.insertionOrder.push_back(pair<string, size_t>(attribute, 0));
+    else 
+      r.insertionOrder.push_back(pair<string, size_t>(attribute, r.fields[attribute].size()));
+
     //Add our value to our vector
     r.fields[attribute].push_back(val);
 
@@ -88,7 +91,7 @@ istream& operator>>(istream& in, Record<value>& r)
  * Query Matching function for records
  * 
  * Complexity: O(n) if searching all fields, ie attr = "*", O(k) otherwise where k is the number of fields with attribute 'attr'
- * Return: true if there exists value which under operation 'op' is equivalent to want
+ * Return: true if there exists value that is 'equivalent' to want under under operation 'op'
 */
 template <class value>
 bool Record<value>::matchesQuery(const string& attr, DBQueryOperator op, const value& want) const {
@@ -108,7 +111,7 @@ bool Record<value>::matchesQuery(const string& attr, DBQueryOperator op, const v
 
     //If fullsearch, set attribute to ordered list attribute value
     if (fullSearch)
-      attribute = *iot;
+      attribute = iot->first;
 
     //For each attribute, check all the values in the vector that belong to it (there may be more than 1)
     for (auto vit = this->fields.at(attribute).begin(); vit != this->fields.at(attribute).end(); ++vit) {

@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 
-  Record<int> rec;
+  Record<string> rec;
 
   //Open test file
   ifstream ifs("O:/Dropbox/Github/Generic-Databases/record.txt");
@@ -20,7 +20,7 @@ int main() {
   else cout << "Unable to open file";
   
   //Explore
-  //cout << rec;
+  cout << rec;
 
   //stuff
   cin.ignore();

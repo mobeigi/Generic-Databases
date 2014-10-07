@@ -34,7 +34,7 @@ template <class value>
 class Record {
 
 public:
-  Record<value>() : selected(false), fields(unordered_map<string, vector<value>>()), insertionOrder(list<string>()) {};
+  Record<value>() : selected(false), fields(unordered_map<string, vector<value>>()), insertionOrder(list<pair<string, size_t>>()) {};
 
   //Member functions
   inline bool isSelected() const { return selected; };
@@ -56,7 +56,7 @@ public:
   //Record data will be stored in an unordered_map which maps strings to a vector of values
   //This has many advantages over a vector of pairs at the cost of a little extra memory (as insertion order has to be kept in a unordered_set)
   unordered_map<string, vector<value>> fields;
-  list<string> insertionOrder;
+  list<pair<string, size_t>> insertionOrder;
   //vector<pair<string, value>> fields;
 
 
