@@ -32,26 +32,31 @@ istream& operator>>(istream& in, Record<value>& r)
 {
   //Clear contents of record before reading in new data (ie we overwrite any pre-existing data)
   r.fields.clear();
+  r.insertionOrder.clear();
 
   string input;
-  
-  //Get first line manually
-  getline(in, input);
-  TrimString(input);
-
-  //Check if valid block
-  if (input.compare("{") != 0) {
-    //Do some error reporting
-    return in;
-  }
+  bool inBlock = false; //var is true if we are in a valid record block
 
   //If valid block, go through remaining lines reading in entries
   while (getline(in, input)) {
     //Trim the input
     TrimString(input);
 
+    //Check if we are in a block
+    if (!inBlock) {
+      //Set bool if new block is found
+      if (input.compare("{") == 0) {
+        inBlock = true;
+        continue;
+      }
+      //Otherwise, keep reading from stream
+      else {
+        continue;
+      }
+    }
+
     //Break if we reach end of record block
-    if (input.compare("}") == 0) {
+    if (inBlock && input.compare("}") == 0) {
       break;
     }
 
@@ -80,7 +85,6 @@ istream& operator>>(istream& in, Record<value>& r)
 
     //Add our value to our vector
     r.fields[attribute].push_back(val);
-
   }
 
   return in;

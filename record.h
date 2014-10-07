@@ -34,6 +34,7 @@ template <class value>
 class Record {
 
 public:
+  //Default constructor
   Record<value>() : selected(false), fields(unordered_map<string, vector<value>>()), insertionOrder(list<pair<string, size_t>>()) {};
 
   //Member functions

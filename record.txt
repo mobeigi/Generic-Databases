@@ -1,3 +1,4 @@
+
 {
   name = Jingling Xue
   e-mail = jxue@cse.unsw.edu.au
@@ -5,5 +6,25 @@
   occupation = Lecturer in Computer Science
   favorite sport = question answering
   office hours = Tues 7-12pm
-  e-mail = other@cse.unsw.edu.au
+}
+
+
+
+{
+  name = Gabriel Ditu
+  e-mail = gabd@cse.unsw.edu.au
+  home page = http://www.cse.unsw.edu.au/~gabd
+  occupation = Lecturer in Computer Science
+  favorite sport = question answering
+  office hours = Tues 7-12pm
+}
+
+
+
+{
+  name = John Potter
+  e-mail = potter@cse.unsw.edu.au
+  home page = http://www.cse.unsw.edu.au/~potter
+  occupation = Lecturer in Computer Science
+  favorite sport = question answering
 }

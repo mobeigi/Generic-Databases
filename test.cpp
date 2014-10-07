@@ -1,26 +1,22 @@
 #include <iostream>
 #include "record.h"
+#include "database.h"
 #include <fstream>
 
 using namespace std;
 
 int main() {
 
-  Record<string> rec;
 
   //Open test file
-  ifstream ifs("O:/Dropbox/Github/Generic-Databases/record.txt");
-  string s;
+  ifstream ifs2("O:/Dropbox/Github/Generic-Databases/record.txt");
 
-  if (ifs.is_open())
-  {
-    ifs >> rec;
-    ifs.close();
-  }
-  else cout << "Unable to open file";
-  
-  //Explore
-  cout << rec;
+  Database<string> db;
+  db.read(ifs2);
+
+  cout << db.numRecords() << endl << endl;
+
+  db.write(std::cout, SelectedRecords);
 
   //stuff
   cin.ignore();
