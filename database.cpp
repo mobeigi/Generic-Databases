@@ -25,6 +25,10 @@ void Database<value>::write(ostream& out, DBScope scope) const {
 template <class value>
 void Database<value>::read(istream& in) {
 
+  //Delete current records
+  records.clear();
+  numSelected_ = 0;
+
   Record<value> r;
 
   //Read records from stream until stream is exhausted
