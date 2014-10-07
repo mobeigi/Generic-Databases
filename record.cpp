@@ -106,19 +106,19 @@ bool Record<value>::matchesQuery(const string& attr, DBQueryOperator op, const v
   if (attribute == "*")
     fullSearch = true;
   //otherwise ensure this attribute exists, if not result is always false
-  else if (!this->fields.count(attribute)) {
+  else if (!fields.count(attribute)) {
     return false;
   }
 
   //Iterate over fields using insertionOrder to determine order
-  for (auto iot = this->insertionOrder.begin(); iot != this->insertionOrder.end(); ++iot) {
+  for (auto iot = insertionOrder.begin(); iot != insertionOrder.end(); ++iot) {
 
     //If fullsearch, set attribute to ordered list attribute value
     if (fullSearch)
       attribute = iot->first;
 
     //For each attribute, check all the values in the vector that belong to it (there may be more than 1)
-    for (auto vit = this->fields.at(attribute).begin(); vit != this->fields.at(attribute).end(); ++vit) {
+    for (auto vit = fields.at(attribute).begin(); vit != fields.at(attribute).end(); ++vit) {
       
       //Perform comparison based on provided operator
       switch (op) {

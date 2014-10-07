@@ -11,7 +11,7 @@ void Database<value>::write(ostream& out, DBScope scope) const {
 
   //Iterate over records, printing them out in definition order
   //Print either selected records or all records based on scope
-  for (auto it = this->records.begin(); it != this->records.end(); ++it) {
+  for (auto it = records.begin(); it != records.end(); ++it) {
     if (scope == AllRecords || (scope == SelectedRecords && it->isSelected())) {
       out << *it << endl;
     }
@@ -36,11 +36,36 @@ void Database<value>::read(istream& in) {
 }
 
 /*
-*
+* Delete all records based on provides scope
 */
 template <class value>
 void Database<value>::deleteRecords(DBScope scope) {
+  switch (scope) {
 
+  //Delete all records
+  case AllRecords:
+    records.clear();  //destructor takes care of memory
+    numSelected_ = 0;
+    break;
+
+  //Delete Selected Records
+  case SelectedRecords:
+    for (auto it = records.begin(); it != records.end(); ) {
+
+      //If record is selected
+      if (it->isSelected()) {
+        //Set iterator to location of next item while deleting this item from the list
+        it = records.erase(it);
+        --numSelected_; //we have one less record in the database now
+      }
+      //Otherwise, iterate onto next element
+      else {
+        ++it;
+      }
+    }
+
+    break;
+  }
 }
 
 /*
@@ -49,12 +74,12 @@ void Database<value>::deleteRecords(DBScope scope) {
 */
 template <class value>
 void Database<value>::selectAll() {
-  for (auto it = this->records.begin(); it != this->records.end(); ++it) {
+  for (auto it = records.begin(); it != records.end(); ++it) {
     it->setSelected(true);
   }
 
   //Set numSelected_ to correct value
-  numSelected_ = this->records.size();
+  numSelected_ = records.size();
 }
 
 /*
@@ -63,7 +88,7 @@ void Database<value>::selectAll() {
 */
 template <class value>
 void Database<value>::deselectAll() {
-  for (auto it = this->records.begin(); it != this->records.end(); ++it) {
+  for (auto it = records.begin(); it != records.end(); ++it) {
     it->setSelected(false);
   }
 
