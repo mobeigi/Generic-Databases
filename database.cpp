@@ -37,6 +37,8 @@ void Database<value>::read(istream& in) {
 
 /*
 * Delete all records based on provides scope
+*
+* Complexity: O(n) regardless of scope
 */
 template <class value>
 void Database<value>::deleteRecords(DBScope scope) {
@@ -97,9 +99,44 @@ void Database<value>::deselectAll() {
 }
 
 /*
+* Operation to select some of the records in the database.
 *
+* Complexity: O(n) - Iterate through all records performing various operations
 */
 template <class value>
 void Database<value>::select(DBSelectOperation selOp, const string& attr, DBQueryOperator op, const value& val) {
+  //Iterate over records
+  for (auto it = records.begin(); it != records.end(); ++it) {
+    //Check for record match
+    bool matched = it->matchesQuery(attr, op, val);
 
+    switch (selOp) {
+    case Add:
+      //Add operates on unselected records
+      if (matched && !it->isSelected()) {
+        it->setSelected(true);
+        numSelected_++;
+      }
+      break;
+
+      //Remove operates on selected records
+    case Remove:
+      if (matched && it->isSelected()) {
+        it->setSelected(false);
+        numSelected_--;
+      }
+      break;
+
+    case Refine:
+      //If not matched and selected, then deselect it
+      if (!matched && it->isSelected() ) {
+        it->setSelected(false);
+        numSelected_--;
+      }
+      break;
+
+    default:
+      break;
+    }
+  }
 }
