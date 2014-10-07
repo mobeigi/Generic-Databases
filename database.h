@@ -11,8 +11,10 @@ public:
   Database<value>() : records(list<Record<value>>()) {}
 
   //Member functions
+
+  //Complexity of inlines: O(1)
   inline int numRecords() const { return records.size(); }
-  inline int numSelected() const { return selectedRecords.size(); }
+  inline int numSelected() const { return numSelected_; }
 
   void write(ostream& out, DBScope scope) const;
   void read(istream& in);
@@ -26,6 +28,7 @@ public:
 
 //private:
   list<Record<value>> records;
+  int numSelected_;
 
 };
 

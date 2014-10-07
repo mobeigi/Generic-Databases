@@ -14,8 +14,7 @@ int main() {
   Database<string> db;
   db.read(ifs2);
 
-  cout << db.numRecords() << endl << endl;
-
+  db.selectAll();
   db.write(std::cout, SelectedRecords);
 
   //stuff
