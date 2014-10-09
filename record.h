@@ -62,7 +62,7 @@ private:
   bool selected;  //used to select/unselect record
 
   //Record data will be stored in an unordered_map which maps strings to a vector of values
-  //This has many advantages over a vector of pairs at the cost of a little extra memory (as insertion order has to be kept in a unordered_set)
+  //This has many advantages over a vector of pairs at the cost of a little extra memory (as insertion order has to be kept in a list)
   unordered_map<string, vector<value>> fields;
   list<pair<string, size_t>> insertionOrder;
 
