@@ -14,14 +14,7 @@ int main() {
   Database<string> db;
   db.read(ifs2);
 
-
-  db.select(Add, "favorite sport", Equal, "question answering");
-  db.select(Remove, "name", Equal, "Jingling Xue");
-  db.select(Refine, "favorite sport", Equal, "question answering");
-
-  db.select(Refine, "e-mail", Equal, "gabd@cse.unsw.edu.au");
-
-  db.write(std::cout, SelectedRecords);
+  db.write(std::cout, AllRecords);
 
   //stuff
   cin.ignore();

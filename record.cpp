@@ -39,8 +39,6 @@ istream& operator>>(istream& in, Record<value>& r)
 
   //If valid block, go through remaining lines reading in entries
   while (getline(in, input)) {
-    //Trim the input
-    TrimString(input);
 
     //Check if we are in a block
     if (!inBlock) {
@@ -61,13 +59,9 @@ istream& operator>>(istream& in, Record<value>& r)
     }
 
     //Get two tokens from string
-    size_t equalPos = input.find("=");
-    string attribute = input.substr(0, equalPos);
-    string valString = input.substr(equalPos + 1, input.length());
-    
-    //Trim above strings
-    TrimString(attribute);
-    TrimString(valString);
+    size_t equalPos = input.find(" = ");
+    string attribute = input.substr(2, equalPos - 2); //attribute must be indented 2 spaces
+    string valString = input.substr(equalPos + 3, input.length());  //value begins directly after " = "
 
     //Create istringstream out of valString
     //We require value to have >> defined
@@ -168,7 +162,4 @@ void readValue(istream& is, string& val) {
   while (getline(is, val)) {
     val += input;
   }
-
-  //Trim final string
-  TrimString(val);
 }
