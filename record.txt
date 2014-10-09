@@ -1,5 +1,5 @@
 {
-    name = Hao Xu   
+    name  =  example  
     leland id = haoxu
     e-mail = haoxu@cse.unsw.edu.au.au
     grader = Raya

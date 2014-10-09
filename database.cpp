@@ -9,6 +9,12 @@
 template <class value>
 void Database<value>::write(ostream& out, DBScope scope) const {
 
+  //Check to see if any records are selected
+  if (numSelected_ == 0 && scope == SelectedRecords) {
+    out << "No records selected";
+    return;
+  }
+
   //Iterate over records, printing them out in definition order
   //Print either selected records or all records based on scope
   for (auto it = records.begin(); it != records.end(); ++it) {

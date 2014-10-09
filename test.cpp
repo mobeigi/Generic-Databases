@@ -14,7 +14,10 @@ int main() {
   Database<string> db;
   db.read(ifs2);
 
-  db.write(std::cout, AllRecords);
+  db.select(Add, "  name ", Equal, " example  ");
+  db.deselectAll();
+
+  db.write(std::cout, SelectedRecords);
 
   //stuff
   cin.ignore();
